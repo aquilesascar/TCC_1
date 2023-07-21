@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #nao {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <button id="nao" onmouseover="moverBotaoNao()">Não</button>
+
+  <script>
+    function moverBotaoNao() {
+      var botaoNao = document.getElementById("nao");
+      var telaWidth = window.innerWidth;
+      var telaHeight = window.innerHeight;
+
+      var novoX = Math.random() * (telaWidth - 100); // Defina o tamanho desejado do botão "não"
+      var novoY = Math.random() * (telaHeight - 40);
+
+      botaoNao.style.left = novoX + "px";
+      botaoNao.style.top = novoY + "px";
+    }
+  </script>
+</body>
+</html>
